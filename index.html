@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam API Capstone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Steam Game Finder</h1>
+
+    <p id="intro-paragraph"></p>
+
+    <form action="">
+        <label for="game-title" id='game-title'>Game Title: </label>
+        <input type="text" id="js-game-search">
+        <label for="low-price">Lowest Price: </label>
+        <input type="number" id="js-low-price" value='0'>
+        <label for="high-price">Highest Price: </label>
+        <input type="number" id="js-high-price" value='20'>
+        <!--
+        <label for="on-sale">Games on Sale: </label>
+        <input type="checkbox" id='js-on-sale'>
+        -->
+        <input type="submit" value='Search'>
+        
+    </form>
+
+    <p id='js-error-message' class='error-message'></p>
+
+    <section id='results' class='hidden'>
+        <h2>Results</h2>
+        <ul id='results-list'></ul>
+    </section>
+
+<!--scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+</body>
+</html>
