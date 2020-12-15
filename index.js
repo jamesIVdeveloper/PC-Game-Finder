@@ -19,7 +19,7 @@ function displayResults(responseJson) {
             `<li><h3>${responseJson[i].title}</h3>
             <p>Normal Price: $${responseJson[i].normalPrice}</p>
             <p>Sale Price: $${responseJson[i].salePrice}</p></li>
-            <a href="${responseJson[i].thumb}">CheapShark Link</a>`
+            <a href="https://www.cheapshark.com/redirect?dealID=${responseJson[i].dealID}">CheapShark Link</a>`
         )};
     $('#results').removeClass('hidden');
 }
