@@ -11,6 +11,9 @@ function formatQueryParams(params) {
 function displayResults(responseJson) {
     console.log(responseJson);
     $('#results-list').empty();
+    if (responseJson.length === 0) {
+        $('#results-list').append(`<h3>Sorry, no results found.  Please try entering something else.</h3>`)
+    }
     for (let i = 0; i < responseJson.length; i++) {
         $('#results-list').append(
             `<li><h3>${responseJson[i].title}</h3>
