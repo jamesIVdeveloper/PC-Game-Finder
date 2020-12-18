@@ -11,16 +11,23 @@
 
     <p id="intro-paragraph">Find great deals on PC games.  Enter a Game Title, or set your price range, and find your next game!</p>
 
+    <div id='form-align'>
     <form action="">
-        <label for="game-title" id='game-title'>Game Title: </label>
-        <input type="text" id="js-game-search">
-        <label for="low-price">Lowest Price: </label>
-        <input type="number" id="js-low-price" value='0'>
-        <label for="high-price">Highest Price: </label>
-        <input type="number" id="js-high-price" value='20'>
-        <input type="submit" value='Search'>
-        
+        <div id='container'>
+            <label for="game-title" id='game-title'>Game Title: </label>
+            <input type="text" id="js-game-search">
+        </div>  
+        <div id='container'>
+            <label for="low-price">Lowest Price:</label>
+            <input type="number" id="js-low-price" value='0'>
+        </div>
+        <div id='container'>
+            <label for="high-price">Highest Price:</label>
+            <input type="number" id="js-high-price" value='20'>
+        </div>
+        <div id='js-search-button'><input type="submit" id='js-submit' value='Search'></div>
     </form>
+    </div>
 
     <p id='js-error-message' class='error-message'></p>
 
