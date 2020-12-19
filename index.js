@@ -16,10 +16,10 @@ function displayResults(responseJson) {
     }
     for (let i = 0; i < responseJson.length; i++) {
         $('#results-list').append(
-            `<li><h3>${responseJson[i].title}</h3>
+            `<div id="game-result"><li><h3>${responseJson[i].title}</h3>
             <p>Normal Price: $${responseJson[i].normalPrice}</p>
-            <p>Sale Price: $${responseJson[i].salePrice}</p></li>
-            <a href="https://www.cheapshark.com/redirect?dealID=${responseJson[i].dealID}">CheapShark Link</a>`
+            <p>Sale Price: $${responseJson[i].salePrice}</p>
+            <a href="https://www.cheapshark.com/redirect?dealID=${responseJson[i].dealID}">CheapShark Link</a></li></div>`
         )};
     $('#results').removeClass('hidden');
 }
