@@ -67,7 +67,7 @@ input, label {
     list-style: none;
 }
 
-#game-result {
+li {
     border-style: solid;
     border-color: black;
     color: black;
