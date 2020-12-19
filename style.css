@@ -23,6 +23,8 @@ h1, h2 {
     margin: 5px 5px 20px 5px;
 }
 
+/* form */
+
 form {
     width: 400px;
     display: flex;
@@ -62,6 +64,8 @@ input, label {
     margin: 3px 3px 3px 3px;
 }
 
+/* results */
+
 #results-list {
     padding: 0;
     list-style: none;
@@ -83,7 +87,7 @@ li {
 /* for larger screens */
 
 @media all and (min-width: 700px) {
-    #game-result {
+    li {
         width: 300px;
     }
 
